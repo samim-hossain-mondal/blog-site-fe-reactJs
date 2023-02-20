@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import Clap from './Clap.js';
 import Like from './Like.js';
@@ -7,7 +8,7 @@ import './Card.css';
 export default function Card() {
   const card = cardData.map((card, index) => {
     return (<div key={index} className='card-blog'>
-      <img src={card.image} />
+      <img src={require(`../assets/images/${card.image}`)} />
       <div className='container'>
         <div className='date-time'>
           <h> {card.date} </h>
