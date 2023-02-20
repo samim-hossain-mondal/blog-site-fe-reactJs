@@ -1,14 +1,14 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import Clap from './Clap.js';
-import Like from './Like.js';
-import cardData from '../assets/mockData/index.js';
+import Clap from '../clap/Clap.js';
+import Like from '../like/Like.js';
+import cardData from '../../assets/mockData/index.js';
 import './Card.css';
 
 export default function Card() {
   const card = cardData.map((card, index) => {
     return (<div key={index} className='card-blog'>
-      <img src={require(`../assets/images/${card.image}`)} />
+      <img src={require(`../../assets/images/${card.image}`)} />
       <div className='container'>
         <div className='date-time'>
           <h> {card.date} </h>
